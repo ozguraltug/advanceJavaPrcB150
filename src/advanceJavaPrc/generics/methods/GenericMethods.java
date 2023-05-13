@@ -26,5 +26,5 @@ public class GenericMethods {
     }
 
 
-
+    // Diziyi artan sıralayan bir method yazınız
 }
