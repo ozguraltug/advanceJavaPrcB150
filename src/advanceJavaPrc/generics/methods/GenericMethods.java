@@ -1,5 +1,7 @@
 package advanceJavaPrc.generics.methods;
 
+import java.util.Arrays;
+
 public class GenericMethods {
     public static void main(String[] args) {
         String[] stdList = {"Rafeel", "Donatello", "Leonardo", "MichelAngelo"};
@@ -10,7 +12,7 @@ public class GenericMethods {
         printArray(pointList);
         printArray(gradeList);
         //2.Öğrencileri isimlerine göre sıralayınız
-
+orderElement(stdList);
         //3.Öğrenci notlarını sıralayınız
 
 
@@ -27,4 +29,8 @@ public class GenericMethods {
 
 
     // Diziyi artan sıralayan bir method yazınız
+    public static <T> void orderElement(T[] arr) {
+        Arrays.stream(arr).sorted().forEach(t -> System.out.print(t + " "));
+    }
+
 }
