@@ -17,7 +17,14 @@ evet ama thread başlatılmaz
 java varsayılan olarak tüm uygulamalarda main threadini kullanır
  */
 public class ThreadCreation1 {
-
+//Task : Thread sınıfını extend eden Sayac isminde class oluşturup
+// bu classta sayıları 1 den 100 e kadar yazdıran günlük olaylardan iki tane thread örneği oluşturunuz
+public static void main(String[] args) {
+    Sayac thread1=new Sayac("Domates");
+    Sayac thread2=new Sayac("Salatalık");
+    thread1.start();
+    thread2.start();
+}
 
 
 }
